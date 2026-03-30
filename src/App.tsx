@@ -94,7 +94,7 @@ function App() {
                 key={task.id} task={task} />
             ))
           ) : (
-            <div className='flex justify-center items-center p-5'>
+            <div className='gap-2 text-gray-400 text-xl flex justify-center items-center p-5'>
               <BookText />
               <h1>No tasks yet</h1>
             </div>
