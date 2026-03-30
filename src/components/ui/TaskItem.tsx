@@ -2,6 +2,7 @@ import type { TaskItemProps } from "@/types/tasks"
 import { Button } from "./button"
 
 const TaskItem = ({ task, onToggle, onDelete }: TaskItemProps) => {
+
     return (
         <div className="flex items-center justify-between bg-white rounded-2xl px-5 py-4 shadow">
             <div className="flex items-center gap-3">

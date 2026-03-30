@@ -44,6 +44,12 @@ function App() {
     )
   }
 
+  const handleKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleCreate()
+    }
+  }
+
   const onChange = (e: ChangeEvent<HTMLInputElement>) => {
     setNewTodo(e.target.value)
   }
@@ -107,6 +113,7 @@ function App() {
 
         <div className='flex gap-1'>
           <Input
+            onKeyDown={handleKeyDown}
             className='rounded-none py-5 focus-visible:ring-0 focus-visible:outline-0'
             onChange={onChange}
             value={newTodo}
